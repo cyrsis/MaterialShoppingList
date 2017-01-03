@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_alignParentStart="true"
+      android:id="@+id/item_status"
+      />
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/item_status"
+      android:layout_alignParentStart="true"
+      android:layout_marginLeft="72dp"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/item_name"
+        android:textColor="@android:color/black"
+        android:elevation="1dp"
+        tools:text="Item Name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_qty"
+        android:layout_below="@+id/item_name"
+        android:layout_alignParentStart="true"
+        tools:text="Item QTY"
+        />
+  </LinearLayout>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/ic_create"
+      android:id="@+id/item_action"
+      android:layout_alignTop="@+id/item_status"
+      android:layout_alignParentEnd="true"
+      android:src="@drawable/ic_create"
+      android:alpha="0.26"
+      />
+</RelativeLayout>
